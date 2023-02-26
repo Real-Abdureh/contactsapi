@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSE':(
-        'authentication.backends.JWTAuthentication  '
+        'authentication.backends.JWTAuthentication  ',
     )
 }
 
@@ -123,7 +123,7 @@ USE_TZ = True
 
 
 # JWT
-JWT_SECRET_KEY = os.env.get('JWT_SECRET_KEY')
+JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
