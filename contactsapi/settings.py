@@ -123,7 +123,8 @@ USE_TZ = True
 
 
 # JWT
-JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
+# JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
+JWT_SECRET_KEY='JWT_SECRET_KEY'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
