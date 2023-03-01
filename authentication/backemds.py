@@ -28,3 +28,4 @@ class JWTAuthentication(authentication.BaseAuthentication):
                 'Your token is expired,login')
 
         return super().authenticate(request)
+Footer
