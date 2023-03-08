@@ -8,7 +8,7 @@ from rest_framework import permissions
 class ContactList(ListCreateAPIView):
 
     serializer_class = ContactSerializer
-    permission_classes = (permissions.IsAuthenticated)
+    permission_classes = (permissions.IsAuthenticated,)
 
 
     def perform_create(self, serializer):
@@ -21,7 +21,7 @@ class ContactList(ListCreateAPIView):
 class ContactDetailView(RetrieveUpdateDestroyAPIView):
 
     serializer_class = ContactSerializer
-    permission_classes = (permissions.IsAuthenticated)
+    permission_classes = (permissions.IsAuthenticated,)
     lookup_field = 'id'  
 
 
